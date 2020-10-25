@@ -30,6 +30,16 @@ class LED {
     updateLED();
   }  
 
+  void turnOn() {
+    this -> state = true;
+    updateLED;
+  }
+  
+  void turnOff() {
+    this -> state = false;
+    updateLED;
+  }
+
   void updateLED() {
     if (state) {
       digitalWrite(pin, HIGH);
